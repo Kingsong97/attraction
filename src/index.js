@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import './assets/scss/style.scss'
 
-const index = () => {
-  return (
-    <div>index</div>
-  )
-}
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
 
-export default index
