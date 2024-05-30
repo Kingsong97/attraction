@@ -6,6 +6,7 @@
     padding-top: 100px;
     position: relative;
     background-position: center;
+    background-size: contain;
 
     .circle {
         width: 200px;
@@ -21,4 +22,28 @@
     }
 }
 
-.channel__info {}
+.channel__info {
+    margin-top: 100px;
+    text-align: center;
+
+    .title {
+        margin-bottom: 10px;
+        font-size: 2rem;
+    }
+
+    .desc {
+        padding: 0 10vw;
+    }
+}
+
+.chvideo__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.chvideo__item {
+    flex-basis: 33.33%;
+    box-sizing: border-box;
+}

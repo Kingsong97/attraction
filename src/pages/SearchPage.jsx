@@ -10,6 +10,7 @@ const SearchPage = () => {
 
     useEffect(() => {
         const fetchVideo = async () => {
+            setLoading(true);
             try {
                 const response = await fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=48&q=${searchID}&key=${process.env.REACT_APP_YOUTUBE_API_KEY} `)
                 const data = await response.json();

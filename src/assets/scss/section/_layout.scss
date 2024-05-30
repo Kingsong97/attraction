@@ -11,11 +11,12 @@
 
 #main {
     max-width: 2000px;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 64px);
     margin: 0 auto;
     padding-left: 260px;
     background-color: #111;
     position: relative;
+    overflow: auto;
 }
 
 #footer {
