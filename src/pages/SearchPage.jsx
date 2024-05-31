@@ -7,6 +7,7 @@ const SearchPage = () => {
     const { searchID } = useParams();
     const [videos, setVideos] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [nextPageToken, setNextPageToken] = useState(null);
 
     useEffect(() => {
         const fetchVideo = async () => {
@@ -15,6 +16,7 @@ const SearchPage = () => {
                 const response = await fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=48&q=${searchID}&key=${process.env.REACT_APP_YOUTUBE_API_KEY} `)
                 const data = await response.json();
                 setVideos(data.items);
+                setNextPageToken(data.nextPageToken);
 
                 // 최소 로딩 소스 1초 유지
                 setTimeout(() => {
@@ -28,6 +30,17 @@ const SearchPage = () => {
         }
         fetchVideo();
     }, [searchID])
+
+    const loadMoreVideos = async () => {
+        try {
+            const response = await fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=48&q=${searchID}&pageToken=${nextPageToken}&key=${process.env.REACT_APP_YOUTUBE_API_KEY} `)
+            const data = await response.json();
+            setVideos(prevVideos => [...prevVideos, ...data.items]);
+            setNextPageToken(data.nextPageToken);
+        } catch (error) {
+            console.log(error);
+        }
+    }
 
     return (
         <Main
@@ -61,6 +74,11 @@ const SearchPage = () => {
                                 </div>
                             </div >
                         ))}
+                    </div>
+                    <div className='search__more'>
+                        {nextPageToken && (
+                            <button onClick={loadMoreVideos}>더보기</button>
+                        )}
                     </div>
                 </section>
             )}

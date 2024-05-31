@@ -34,16 +34,40 @@
     .desc {
         padding: 0 10vw;
     }
+
+    .info {
+        margin-top: 30px;
+
+        span {
+            background-color: #bbb;
+            padding: 10px 20px;
+            border-radius: 40px;
+            margin: 4px;
+
+            svg {
+                width: 20px;
+                height: 20px;
+                vertical-align: -5px;
+                margin-right: 5px;
+            }
+        }
+    }
 }
 
-.chvideo__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 20px;
+.channel__video {
+    margin-top: 100px;
+    padding: 2rem 2rem 3rem 2rem;
 }
 
-.chvideo__item {
-    flex-basis: 33.33%;
-    box-sizing: border-box;
+.channel__more {
+    text-align: center;
+
+    button {
+        padding: 0.3rem 2rem;
+        border-radius: 50px;
+        margin-bottom: 100px;
+        background-color: #fff;
+        color: #000;
+        cursor: pointer;
+    }
 }
