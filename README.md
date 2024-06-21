@@ -1,58 +1,34 @@
-# Youtube API를 이용한 여행 사이트
-- 유튜브 API를 이용한 어트랙션 소개 사이트입니다.
+# 헬스 유튜브 영상 모음 사이트
 
-## 작업 순서
-1. node.js 설치 후 버전 확인
-2. 폴더 셋팅하고 필요없는 파일 제거
-3. 라이브러리 설치
-4. 폴더 셋팅
-5.
-## 필요한 라이브러리 설치
-- react 설치 'npx create-react-app 폴더이름' : 폴더 생략 방법 .으로 표시
-- react-router-dom 설치 'npm install react-router-dom' : 주소 설정하기 위한 라이브러리
-- axios 설치 'npm install axios' : API 라이브러리
-- react icon 설치 'npm install react-icons' : react에 필요한 아이콘
-- react-player 설치 'npm install react-player' : 유튜브 영상 재생
-- sass 설치 'npm install sass' : CSS 라이브러리
-- react-helmet-async 설치 'npm install react-helmet-async' : SEO
-- swiper 설치 'npm install swiper' : 이미지 슬라이드
-## 다운로드 순서
-````
-<!-- react 설치 -->
-npm create-react-app
-<!-- react-router-dom 설치 -->
-npm install react-router-dom
-<!-- axios 설치 -->
-npm install axios
-<!-- react icon 설치 -->
-npm install react-icons
-<!-- react-player 설치 -->
-npm install react-player
-<!-- sass 설치 -->
-npm install sass
-<!-- react-helmet-async 설치 -->
-npm install react-helmet-async
-<!-- swiper 설치 -->
-npm install swiper
-````
-## 실행하기
-````
-npx start
-````
-## 사용 스텍
-- node.js 설치
-## 트러블 슈팅
-- node.js 설치시 폴더 인식 못함 :
-폴더명 대문자로 입력 X
-## 단축키
-- rafc 입력하면 이렇게 자동완성
-````
-import React from 'react'
-const Home = () => {
-  return (
-    <div>
-        </div>
-  )
-}
-export default Home
-````
+이 프로젝트는 헬스와 피트니스 관련 유튜브 영상을 모아서 제공하는 웹사이트입니다. 사용자는 다양한 운동 및 스트레칭 영상을 쉽게 찾아보고 시청할 수 있습니다.
+
+## 목차
+
+1. [개요](#개요)
+2. [특징](#특징)
+3. [사용된 기술](#사용된-기술)
+4. [설치 및 실행](#설치-및-실행)
+5. [프로젝트 구조](#프로젝트-구조)
+6. [기여](#기여)
+7. [라이선스](#라이선스)
+
+## 개요
+
+이 웹사이트는 헬스와 피트니스에 관심이 있는 사용자들을 위해 다양한 유튜브 영상을 한 곳에 모아 제공합니다. 사용자는 운동 전 스트레칭, 최신 운동 영상, 인기 운동 영상, 카테고리별 영상을 쉽게 찾아볼 수 있습니다.
+
+## 특징
+
+- **다양한 운동 영상**: 가슴, 등, 하체, 어깨, 코어 운동 등 다양한 카테고리의 영상을 제공합니다.
+- **최신 및 인기 영상**: 최신 업로드된 영상과 사용자들이 가장 많이 본 인기 영상을 제공합니다.
+- **운동 전 스트레칭**: 운동 전 준비운동으로 적합한 스트레칭 영상을 제공합니다.
+- **추천 유튜버**: 신뢰할 수 있는 유튜버의 추천 영상을 모아 제공합니다.
+- **반응형 디자인**: 모바일, 태블릿, 데스크탑 등 다양한 기기에서 최적화된 사용자 경험을 제공합니다.
+
+## 사용된 기술
+
+- **프론트엔드**: React, CSS
+- **API**: YouTube Data API
+- **기타**: Axios (API 요청)
+
+
+
