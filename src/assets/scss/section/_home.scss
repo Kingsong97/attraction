@@ -1,27 +1,120 @@
+/* Home.css */
 .home-section {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    background-color: #121212;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
 }
 
 .content {
-    text-align: center;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
 }
 
-button {
-    background-color: #4CAF50; /* 녹색 배경 */
-    color: white; /* 흰색 텍스트 */
-    padding: 10px 20px;
-    margin-top: 20px;
+.hero {
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #ff4c4c;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+    color: #cccccc;
+}
+
+.hero button {
+    background-color: #ff4c4c;
+    color: #ffffff;
+    padding: 15px 30px;
+    font-size: 1.2em;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-button:hover {
-    background-color: #45a049; /* 버튼 호버 시 색상 변경 */
+.hero button:hover {
+    background-color: #ff1c1c;
+    transform: scale(1.05);
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature {
+    flex: 1 1 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+}
+
+.feature h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #ff4c4c;
+}
+
+.feature p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #cccccc;
+}
+
+.feature button {
+    background-color: #4caf50;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.feature button:hover {
+    background-color: #388e3c;
+    transform: scale(1.05);
+}
+
+.video-results {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.video {
+    margin: 10px;
+    padding: 10px;
+    background-color: #2e2e2e;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.video h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #ffffff;
 }

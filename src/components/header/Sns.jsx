@@ -1,5 +1,4 @@
-import React from 'react'
-
+import React from 'react';
 import { snsLink } from '../../data/menu';
 
 const Sns = () => {
@@ -15,7 +14,7 @@ const Sns = () => {
                 ))}
             </ul>
         </div>
-    )
-}
+    );
+};
 
-export default Sns
+export default Sns;

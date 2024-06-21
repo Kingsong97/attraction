@@ -22,7 +22,6 @@
             }
         }
 
-
         span {
             font-size: 20px;
             line-height: 1;
@@ -60,8 +59,6 @@
                     margin: 5px 15px 0 0;
                 }
             }
-
-
         }
 
         li:hover {
@@ -92,17 +89,15 @@
     }
 }
 
-
 .header__sns {
     position: fixed;
     bottom: 0;
-    left: 0;
-    right: 0;
-    width: 260px;
+    width: 100%;
+    max-width: 260px;
     text-align: center;
     padding: 15px 0 10px;
-    background-color: var(--blackAlpha100);
     backdrop-filter: blur(10px);
+    box-sizing: border-box;
 
     li {
         display: inline-block;
@@ -119,5 +114,13 @@
         position: fixed;
         left: 0;
         top: 0;
+    }
+
+    .header__sns {
+        width: 100%;
+        left: 0;
+        right: 0;
+        transform: none;
+        max-width: none;
     }
 }

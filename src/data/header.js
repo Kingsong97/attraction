@@ -97,22 +97,22 @@ export const searchKeyword = [
 export const snsLink = [
     {
         title: "github",
-        URL: "https://github.com/kingsong97",
+        url: "https://github.com/kingsong97",
         icon: <AiFillGithub />
     },
     {
         title: "youtube",
-        URL: "https://github.com/kingsong97",
+        url: "https://github.com/kingsong97",
         icon: <FaYoutube />
     },
     {
         title: "blog",
-        URL: "https://github.com/kingsong97",
+        url: "https://github.com/kingsong97",
         icon: <ImBlogger2 />
     },
     {
         title: "instagram",
-        URL: "https://github.com/kingsong97",
+        url: "https://github.com/kingsong97",
         icon: <FaInstagram />
     },
 ]
