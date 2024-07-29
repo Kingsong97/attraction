@@ -15,36 +15,6 @@
 - 검색 기능을 통해 Tea외 영상들도 검색해서 볼 수 있음
 - 해당 영상의 채널정보 및 채널에 올라간 영상들도 한번에 볼 수 있
 
-### ✨사이트 프리뷰
-
-#### [홈화면]
-
-![image](https://github.com/HwangInJi/youtubetea/assets/163365140/ce534501-e536-4aad-bb04-88c0766e128f)
-![image](https://github.com/HwangInJi/youtubetea/assets/163365140/2b426537-aed5-4814-b51f-6625d1b1546e)
-
-- 홈 화면은 Aside 구조로 레이아웃을 만들었으며, 좌측은 메뉴탭이 있고 우측엔 메인 정보들을 확인 할 수 있음
-- 컨셉과 어울리는 배너 안에 검색 기능을 넣어 홈화면에서도 검색할 수 있도록 기능 설정
-- 하단엔 Tea와 관련된 영상 하나가 새로고침 할 때마다 랜덤으로 재생되며, 이 사이트가 어떤 사이트인지에 대한 간략한 소개
-  
-#### [메뉴탭 & 영상 목록]
-
-![image](https://github.com/HwangInJi/youtubetea/assets/163365140/63d953e4-bd18-4408-ad6e-2fb9e30e53e4)
-![image](https://github.com/HwangInJi/youtubetea/assets/163365140/cacc7e3f-a0a7-40e7-ac94-e3923cfacbc0)
-![image](https://github.com/HwangInJi/youtubetea/assets/163365140/5cae4eed-1fe7-4e48-86ce-39c0179d65e6)
-
-
-- 메뉴탭에 있는 카테고리를 누르면 해당 키워드와 연관된 유튜브 영상이 50개가 나오며, 하단에 더보기 버튼을 누르면 추가로 50개씩 나오도록 설정하여 해당 키워드 영상을 모두 볼 수 있도록 기능 구현
-- 카테고리 밑에 있는 작은 키워드 또한 마찬가지로 해당 키워드가 연관된 유튜브 영상이 나오도록 추가 기능 설정
-  
-#### [유튜브 채널 정보 확인]
-
-![image](https://github.com/HwangInJi/youtubetea/assets/163365140/b6d99a39-4f15-44df-ad0f-2b1761337f1b)
-![image](https://github.com/HwangInJi/youtubetea/assets/163365140/28fb8bd2-819b-47a2-9df7-40125595da6d)
-![image](https://github.com/HwangInJi/youtubetea/assets/163365140/b824c9bf-1266-492f-8dd3-1bb5fb9ecc9f)
-
-- 타이틀 제목 밑에 있는 채널명을 누르면 해당 채널 정보 페이지로 넘어가고, 마찬가지로 채널에 등록된 영상이 50개가 뜨게 되며 더보기를 누르면 50개씩 영상을 추가로 더 볼 수 있도록 설정
-
-
 
 ### 🛠️ 필요한 라이브러리 설치 순서
 
